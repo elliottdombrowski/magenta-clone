@@ -1,9 +1,22 @@
 .cms-wrapper {
+  padding: 2rem;
+  
   nav {
     .cms-nav {
+      display: flex;
+      padding: 1rem;
+      
       li {
+        font-size: 24px;
+        list-style-type: none;
+
+        &:last-child {
+          margin-left: 2rem;
+        }
+
         a {
           color: black;
+          text-decoration: none;
         }
       }
     }
