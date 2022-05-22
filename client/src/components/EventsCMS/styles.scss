@@ -1,0 +1,34 @@
+.events-cms-wrapper {
+  display: flex;
+
+  .create-event {
+    width: 50%;
+
+    form {
+      display: flex;
+      flex-direction: column;
+      width: 300px;
+      
+      input {
+        padding: .5rem;
+        border-radius: 10px;
+        border: 1px solid grey;
+        font-size: 20px;
+        
+        &:not(:first-child) {
+          margin-top: .5rem;
+        }
+      }
+      
+      .events-submit {
+        padding: .5rem;
+        margin-top: .5rem;
+        border-radius: 10px;;
+      }
+    }
+  }
+
+  .events-list {
+    width: 50%;
+  }
+}
