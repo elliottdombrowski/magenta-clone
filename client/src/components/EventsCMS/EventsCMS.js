@@ -8,26 +8,32 @@ const EventsCMS = () => {
     <main className='events-cms-wrapper'>
       <section className='create-event'>
         <form>
+          <label for='eventDate'>Date<span>*</span></label>
           <input
             type='date'
+            name='eventDate'
             required
           />
 
+          <label for='eventLocation'>Location<span>*</span></label>
           <input
             type='text'
+            name='eventLocation'
             placeholder='location'
             required
           />
 
+          <label for='eventAddress'>Address<span>*</span></label>
           <input
             type='text'
+            name='eventAddress'
             placeholder='address'
             required
           />
 
-          <input
-            type='text'
-            placeholder='details'
+          <textarea
+            className='cms-event-details'
+            placeholder='event details'
           />
 
           <button
@@ -40,7 +46,7 @@ const EventsCMS = () => {
       </section>
 
       <section className='events-list'>
-      
+
       </section>
     </main>
   );
