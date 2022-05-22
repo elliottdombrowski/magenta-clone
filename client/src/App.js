@@ -1,9 +1,15 @@
+import React, { useState, useEffect, useRef } from 'react';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+
 import './App.css';
+
+//IMPORTING COMPONENTS
+import Header from './components/Header/Header';
 
 function App() {
   return (
     <div className="App">
-      <h1>default render</h1>
+      <Header />
     </div>
   );
 }
